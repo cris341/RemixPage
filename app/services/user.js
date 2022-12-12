@@ -9,7 +9,7 @@ export async function UserCreatMany(file){
     try {
             const inserts = [
                 {  email: '1123sonaliaa@priAsmaaa.io' },
-            { name: 'Alex12', email: '1alex@prismmaa.io' },
+                { name: 'Alex12', email: '1alex@prismmaa.io' },
         ]
         const createManyPosts =  file.map(async (post) =>{
                 const user = await ValidarUser(post.email)

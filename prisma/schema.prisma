@@ -27,3 +27,11 @@ model Post {
   author    User    @relation(fields: [authorId], references: [id])
   authorId  Int
 }
+
+model Img {
+  id        Int      @id @default(autoincrement())
+  createdAt DateTime @default(now())
+  UpdateAt  DateTime @updatedAt
+  url       String
+  name      String
+}

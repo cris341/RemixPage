@@ -30,10 +30,13 @@ export default function FormImg(e) {
 
     }
     return (
-        <Form method="post" encType="multipart/form-data">
-            <label htmlFor="avatar-input">Avatar</label>
-            <input id="avatar-input" type="file" name="avatar" onChange={(e) => ImgOnchage(e)} />
-            <button>Upload</button>
-        </Form>
+        <>
+            <img src="\\uploads\\020 (2).jpg" />
+            <Form method="post" encType="multipart/form-data">
+                <label htmlFor="avatar-input">Avatar</label>
+                <input id="avatar-input" type="file" name="avatar" onChange={(e) => ImgOnchage(e)} />
+                <button>Upload</button>
+            </Form>
+        </>
     )
 }
