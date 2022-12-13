@@ -10,10 +10,10 @@ export default function ImportImg() {
 }
 
 export async function action({ request }) {
-    const folder = 'pdf/prueba1'
+    const folder = 'img/multiple4'
     const formData = await unstable_parseMultipartFormData(request, UploadFile(folder));
 
-    const file = formData.get("avatar");
+    const file = formData.getAll("img");
 
     console.log(file);
     return null;
